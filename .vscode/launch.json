@@ -1,0 +1,31 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: PyBricks Unbrickables1",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "pybricksdev",
+            "args": [
+                "run",
+                "-n",
+                "Unbrickables1",
+                "ble",
+                "${file}"
+            ],
+        },
+        {
+            "name": "Python Debugger: PyBricks RoboTo",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "pybricksdev",
+            "args": [
+                "run",
+                "-n",
+                "RoboTo",
+                "ble",
+                "${file}"
+            ],
+        }
+    ]
+}

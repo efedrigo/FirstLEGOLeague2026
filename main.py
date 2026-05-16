@@ -12,7 +12,7 @@ from robot import robotCompetition
 from testConfig import program1, program0
 #from testOdometer import program2
 #from testPursuit import testPursuit
-#from mission1 import mission1
+from mission1 import mission1
 #from mission3_4 import mission3_4
 #from mission9 import mission9
 #from mission7 import mission7
@@ -31,9 +31,9 @@ print("sensed color:",color)
 
 MissionTable = [[Color.NONE,"A",program0], # config test, battery level
                 [Color.BEIGE,"B",program1], # test configuration with motion
-                [Color.DARKBROWN,"C",program2],  # test odometer
+#                [Color.DARKBROWN,"C",program2],  # test odometer
 #                [Color.BEIGE,"D",testPursuit], # test trajectory tracking
-#                [Color.YELLOW,"1",mission1],
+                [Color.YELLOW,"1",mission1],
 #                [Color.ROSE,"2",mission956],
 #                [Color.MAGENTA,"3",mission10],
 #                [Color.LIGHTBLUE,"4",mission8],
