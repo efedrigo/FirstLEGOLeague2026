@@ -29,7 +29,7 @@ myRobot = robotCompetition()
 color = myRobot.colorSensor.color()
 print("sensed color:",color)
 
-MissionTable = [[Color.NONE,"A",program0], # config test, battery level
+MissionTable = [[Color.NONE,"A",mission1], #program0], # config test, battery level
                 [Color.BEIGE,"B",program1], # test configuration with motion
 #                [Color.DARKBROWN,"C",program2],  # test odometer
 #                [Color.BEIGE,"D",testPursuit], # test trajectory tracking
