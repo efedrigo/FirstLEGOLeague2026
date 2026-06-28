@@ -37,6 +37,6 @@ def mission1(myRobot):
     myRobot.accessoryRight.run_angle(FAST_SPEED, accessory_right_sign * 360*5, then=Stop.HOLD, wait=True)
 
     # drive.ar e risolvi altre 2 missioni
-    drive.arc(-185.3, 71.67, then=Stop.HOLD, wait=True)
-    drive.straight(10, then=Stop.BRAKE, wait=True)
-    drive.arc(-60, 45.2, then=Stop.BRAKE, wait=True)
+    drive.arc(-185.3,66.66, then=Stop.HOLD, wait=True)
+    drive.straight(100, then=Stop.BRAKE, wait=True)
+#    drive.arc(-60, 45.2, then=Stop.BRAKE, wait=True)
