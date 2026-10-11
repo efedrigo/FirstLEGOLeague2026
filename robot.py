@@ -325,7 +325,7 @@ class robotCompetition2026():
         return self.configurationCorrect
 
     def __init__(self):
-        self.hub = InventorHub(front_side=Axis.Y,top_side=-Axis.X);
+        self.hub = InventorHub(front_side=Axis.Y,top_side=Axis.Z);
         self.hub.display.orientation(up=Side.RIGHT)
         self.hub.display.icon(Icon.CIRCLE)
         if (self.testConfig()):
@@ -340,7 +340,7 @@ class robotCompetition2026():
 
         # blue : 87.5 m
         # black-motorcycle:81.6
-            self.wheelDiameter = 79.78; # diameter, mm
+            self.wheelDiameter = 62.4; # diameter, mm
             self.wheelC = self.wheelDiameter * umath.pi; #mm 
             self.axle = 89; #88; #mm
             self.driveBase = DriveBase(self.motorLeft, 

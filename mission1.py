@@ -31,12 +31,13 @@ def mission1(myRobot):
 
     # Blocking straight move
     drive.straight(720, then=Stop.BRAKE, wait=True)
-    drive.turn(-20, then=Stop.BRAKE, wait=True)
+    drive.turn(-17, then=Stop.BRAKE, wait=True)
 
     # Picchia col martello e prendi le rotelline nascoste
-    myRobot.accessoryRight.run_angle(FAST_SPEED, accessory_right_sign * 360*5, then=Stop.HOLD, wait=True)
+    myRobot.accessoryRight.run_angle(FAST_SPEED, accessory_right_sign * 360*5-15, then=Stop.HOLD, wait=True)
 
     # drive.ar e risolvi altre 2 missioni
-    drive.arc(-185.3,66.66, then=Stop.HOLD, wait=True)
-    drive.straight(100, then=Stop.BRAKE, wait=True)
-#    drive.arc(-60, 45.2, then=Stop.BRAKE, wait=True)
+    drive.arc(-145.3,80.80, then=Stop.HOLD, wait=True)
+#    drive.arc(-105.3,-60.80, then=Stop.HOLD, wait=True)
+    drive.turn(60, then=Stop.BRAKE, wait=True)
+    drive.arc(145.3, -40.40, then=Stop.BRAKE, wait=True)
