@@ -12,7 +12,7 @@ SLOW_SPEED = 100
 Distanza = 500 #50 mm = 5 cm
 
 
-def mission2(myRobot):
+def mission2a(myRobot):
 
     print("Go!")
 
@@ -30,6 +30,9 @@ def mission2(myRobot):
 
 
     # Blocking straight move
-    drive.straight(720, then=Stop.BRAKE, wait=True)
-    drive.turn(-20, then=Stop.BRAKE, wait=True)
+    myRobot.accessoryLeft.run_angle(FAST_SPEED, accessory_left_sign * 30, then=Stop.HOLD, wait=True)
+
+    drive.straight(450, then=Stop.BRAKE, wait=True)
+    myRobot.accessoryLeft.run_angle(FAST_SPEED, accessory_left_sign * -50, then=Stop.HOLD, wait=True)
+    drive.straight(-600, then=Stop.BRAKE, wait=True)
 

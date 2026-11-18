@@ -2,8 +2,6 @@ from pybricks.robotics import DriveBase
 from pybricks.parameters import Stop
 from pybricks.tools import wait
 import umath as umath
-import math
-
 
 # Speed levels (mm/s)
 FAST_SPEED = 600
@@ -65,8 +63,12 @@ def mission3(myRobot):
     drive.straight(85.795320, then=Stop.BRAKE, wait=True)
 
     #be the cool robot who makes the cool mission
-    myRobot.accessoryLeft.run_angle(SLOW_SPEED, accessory_right_sign * (-80), then=Stop.HOLD, wait=True)
+    myRobot.accessoryLeft.run_angle(SLOW_SPEED, accessory_right_sign * (-80), then=Stop.HOLD, wait=False)
+    wait(1000)
+
     print("Kinderarbeit Auf Die Eins!")
+    drive.turn(-120, then=Stop.BRAKE, wait=True)
+    drive.straight(-700, then=Stop.BRAKE, wait=True)
 
 
 

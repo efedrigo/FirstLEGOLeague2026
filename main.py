@@ -13,9 +13,12 @@ from testConfig import program1, program0
 #from testOdometer import program2
 #from testPursuit i mport testPursuit
 from mission1 import mission1
-from mission2 import mission2
+from mission2 import mission2a
 from mission3 import mission3
-#from mission3_4 import mission3_4
+from mission3a import mission3a
+from mission5 import mission5
+from mission6 import mission6
+from missionA import missionA
 #from mission9 import mission9
 #from mission7 import mission7
 #from mission8_b import mission8
@@ -32,19 +35,21 @@ color = myRobot.colorSensor.color()
 print("sensed color:",color)
 
 MissionTable = [[Color.NONE,"A",mission1], #program0], # config test, battery level
-                [Color.BEIGE,"B",program1], # test configuration with motion
+#                [Color.BEIGE,"B",program1], # test configuration with motion
 #                [Color.DARKBROWN,"C",program2],  # test odometer
 #                [Color.BEIGE,"D",testPursuit], # test trajectory tracking
                 [Color.YELLOW,"1",mission1],
-                [Color.LIGHTGRAY,"2",mission2],
-                [Color.LIGHTBLUE,"3",mission3],
-#                [Color.ROSE,"2",mission956],
-#                [Color.MAGENTA,"3",mission10],
-#                [Color.LIGHTBLUE,"4",mission8],
+                [Color.LIGHTGREEN,"2",mission2a],
+                [Color.LIGHTBLUE,"3-",mission3],
+                [Color.DARKBROWN,"5",mission5],
+#                [Color.BEIGE,"6",mission6],
+                [Color.ROSE,"3",mission3a],
+                [Color.LIGHTBROWN,"3",missionA],
 #                [Color.DARKBLUE,"4",mission8],
-#                [Color.WHITE,"5",mission12],
+                [Color.WHITE,"5",mission5],
 #                [Color.BLACK,"6",mission3_4],
-#                [Color.RED,"7",mission14],
+#                [Color.RED,"7",mission14], Uncomment to enable mission14 Until mission14 is ready Uncomment the line below to enable mission14 Until mission14 is ready
+                [Color.RED,"5",mission5],
                 ]  
 
 for mission in MissionTable:
@@ -61,4 +66,3 @@ myRobot.accessoryRight.stop()
 myRobot.driveBase.stop()
 
 wait(500)
-
